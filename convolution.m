@@ -20,10 +20,12 @@ x_lhs = conv(x1_n, x2_n);
 figure
 subplot(2,1,1);
 plot(w_prime, x_rhs);
+title('frequency spectrum of x1(n)*x2(x)');
 xlabel('frequency f');
 ylabel('magnitude');
 
 subplot(2,1,2);
 plot(w_prime, abs(dtft(x_lhs)));
+title('X1(w)X2(w)');
 xlabel('frequency f');
 ylabel('magnitude');
