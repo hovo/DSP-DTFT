@@ -15,20 +15,24 @@ x_rhs = conj(fliplr(fft(x_n, 1024)));
 figure
 subplot(4,1,1);
 plot(w_prime, abs(x_rhs));
+title('magnitude vs frequncy of x_rhs');
 xlabel('frequency f');
 ylabel('magnitude');
 
 subplot(4,1,2);
 plot(w_prime, abs(x_lhs));
+title('magnitude vs frequncy of x_lhs');
 xlabel('frequency f');
 ylabel('magnitude');
 
 subplot(4,1,3);
 plot(w_prime, angle(x_rhs));
+title('angle vs frequency of x_rhs');
 xlabel('frequency f');
-ylabel('phase');
+ylabel('angle');
 
 subplot(4,1,4);
 plot(w_prime, angle(x_lhs));
+title('angle vs frequency of x_lhs');
 xlabel('frequency f');
-ylabel('phase');
+ylabel('angle');
