@@ -26,11 +26,13 @@ x_lhs = abs(dtft(x1_prime + x2_prime));
 figure
 subplot(2,1,1);
 plot(w_prime, x_rhs);
+title('frequency vs magnitude for a1*x1(w) + a2*x2(w)');
 xlabel('frequency f');
 ylabel('magnitude');
 
 subplot(2,1,2);
 plot(w_prime, x_lhs);
+title('frequency vs magnitude for a1*x1(n) + a2*x2(n)');
 xlabel('frequency f');
 ylabel('magnitude');
 
