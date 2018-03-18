@@ -12,24 +12,28 @@ x2_n = sin(n);
 figure
 subplot(2,1,1);
 plot(n, x1_n);
-xlabel('time t');
+title('time vs magnitude for: 0.5^nu(n)');
+xlabel('time n');
 ylabel('magnitude');
 
 subplot(2,1,2);
 x1_w = abs(dtft(x1_n));
 plot(w_prime, x1_w);
+title('frequency vs magnitude for: 0.5^nu(n)');
 xlabel('frequncy');
 ylabel('magnitude');
 
 % Function 2 - Plot
 figure
 subplot(2,1,1);
-plot(n1, x2_n);
-xlabel('time t');
+plot(n, x2_n);
+title('time vs magnitude for: sin(n)');
+xlabel('time n');
 ylabel('magnitude');
 
 subplot(2,1,2);
 x2_w = abs(dtft(x2_n));
 plot(w_prime, x2_w);
+title('frequency vs magnitude for: sin(n)');
 xlabel('frequncy');
 ylabel('magnitude');
